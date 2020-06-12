@@ -1,0 +1,170 @@
+/*----------------------
+  -@font-face-
+---------------------*/
+@font-face {
+	font-family: 'MolengoRegular';
+	src: url('../fonts/Molengo-Regular-webfont.eot');
+	src: local('☺'), url('../fonts/Molengo-Regular-webfont.woff') format('woff'), url('../fonts/Molengo-Regular-webfont.ttf') format('truetype'), url('../fonts/Molengo-Regular-webfont.svg#webfontafxixy8P') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'ReenieBeanieRegular';
+    src: url('../fonts/reeniebeanie-webfont.eot?') format('eot'),
+         url('../fonts/reeniebeanie-webfont.woff') format('woff'),
+         url('../fonts/reeniebeanie-webfont.ttf') format('truetype'),
+         url('../fonts/reeniebeanie-webfont.svg#webfontm8sUyFtL') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*----------------------
+  -HTML5-
+---------------------*/
+article,aside,figure,footer,header,nav,section					{display:block;}
+
+/*----------------------
+  -GENERAl-
+---------------------*/
+* 																{margin:0; padding:0;}
+body															{font:14px/1.4 "MolengoRegular", arial, sans-serif; margin-top:48px;}
+a																{text-decoration:none; color:#333;}
+p																{font-size:14px; line-height:20px; color:#666;}
+h1,h2,h3,h4,h5,h6												{font-family:"MolengoRegular", arial, sans-serif; text-transform:uppercase; font-weight:normal;}
+li																{margin-left:0; list-style:none;}
+
+/*----------------------
+  -HEADER-
+---------------------*/
+header															{clear:both}
+h1																{background:url(../images/branding.jpg) no-repeat; width:180px; height:85px; text-indent:-9999px; float:right; margin:8px 10px 0 0;}
+
+	/*----------------------
+	  -NAV-
+	---------------------*/
+	header nav													{float:right; margin:70px 82px 0 0; text-transform:uppercase; font-size:18px; font-weight:lighter; position:relative;}
+	nav #mainNav li												{float:left; height:53px; margin-right:15px; display:inline;}
+		#mainNav li.home										{position:absolute; top:-60px; left:-400px; width:20px; height:20px;}
+		#mainNav li:last-child									{margin-right:0;}
+		#mainNav a												{background:url(../images/navSprite.jpg) no-repeat 0 0; color:#CCC; text-align:center; display:block; position:relative;}
+			#mainNav li.home a									{background:url(../images/homeBtn.jpg) no-repeat center top; width:20px; height:20px; text-indent:-9999px;}
+			#mainNav li.about a									{width:60px;}
+			#mainNav li.service a								{background-position:-71px 0; width:68px;}
+			#mainNav li.works a									{background-position:-151px 0; width:74px;}
+			#mainNav li.location a								{background-position:-236px 0; width:80px;}
+			/*HOVER & ACTIVE*/
+			#mainNav li.home a:hover,
+			#mainNav li.home a.active							{background-position:center bottom;}
+			#mainNav li.about a:hover,
+			#mainNav li.about a.active							{background:url(../images/navSprite.jpg) no-repeat 0 -66px; color:#FFF;}
+			#mainNav li.service a:hover,
+			#mainNav li.service a.active						{background:url(../images/navSprite.jpg) no-repeat -71px -66px; color:#FFF;}
+			#mainNav li.works a:hover,
+			#mainNav li.works a.active							{background:url(../images/navSprite.jpg) no-repeat -151px -66px; color:#FFF;}
+			#mainNav li.location a:hover,
+			#mainNav li.location a.active						{background:url(../images/navSprite.jpg) no-repeat -236px -66px; color:#FFF;}
+			/*ACTIVE*/
+			#mainNav li.about a.active span,
+			#mainNav li.service a.active span,
+			#mainNav li.works a.active span,
+			#mainNav li.location a.active span					{background:url(../images/man.jpg) no-repeat; width:10px; height:23px; display:block; position:absolute; top:-25px; left:45%;}
+
+#container														{position:relative; padding-top:18px; overflow:hidden; clear:both;}
+	section														{min-height:650px; margin-top:30px;}
+	blockquote													{font:18px/24px 'ReenieBeanieRegular', arial, sans-serif; color:#999;}
+
+/*----------------------
+  -HOME-
+---------------------*/
+#heroes															{position:relative; background:url(../images/bg.jpg) no-repeat center bottom; height:408px; margin-top:195px;}
+	img.hc1														{position:absolute; left:866px; top:212px;}
+	img.hc2														{position:absolute; left:768px; top:212px;}
+	img.hc3														{position:absolute; left:324px; top:-30px;}
+	img.hc4														{position:absolute; left:125px; top:-30px;}
+	img.hc5														{position:absolute; left:0; top:-208px;}
+	img.hc6														{position:absolute; left:668px; top:-92px;}
+	img.hc7														{position:absolute; left:409px; top:-155px;}	
+	
+	/*----------------------
+	  -TOOLTIPS-
+	---------------------*/
+	.tip 														{width: 212px; padding-top: 37px; overflow: hidden; display: none; position: absolute; z-index: 500; background: transparent url(../images/tipTop.png) no-repeat top;}
+	.tipMid 													{background: transparent url(../images/tipMid.png) repeat-y center center; font:18px/24px 'ReenieBeanieRegular',arial,sans-serif; padding: 0 40px 18px;}
+	.tipBtm 													{background: transparent url(../images/tipBtm.png) no-repeat bottom; height: 32px;}
+
+/*----------------------
+  -ABOUT-
+---------------------*/
+h2.intro														{color:#690; font-size:18px; line-height:26px; margin-top:80px;}
+img.aboutImg													{position:absolute; top:20px; left:-30px;}	
+blockquote.aboutQ												{width:178px; position:absolute; top:160px; left:220px;}
+.feature														{overflow:hidden; margin-bottom:48px;}
+	img.featureImg												{float:left; margin-right:20px;}
+	.feature h3													{padding-top:5px; color:#690;}
+	
+/*----------------------
+  -SERVICES-
+---------------------*/
+img.servicesImg													{position:absolute; top:170px; left:-5px;}
+blockquote.servicesQ											{width:400px; position:absolute; top:35px; left:50px;}
+	.feature ul													{font-size:13px; color:#666; margin:10px 0 0 15px;}
+	.feature ul li												{list-style:square outside; margin-bottom:10px;}
+	.man-1															{margin-top:50px;}
+	
+/*----------------------
+  -WORKS-
+---------------------*/
+img.workImg														{position:absolute; top:-65px; left:-50px;}
+blockquote.workQ												{width:220px; position:absolute; top:30px; left:200px;}
+		.portfolio h3											{background:url(../images/arrow.png) no-repeat 10px center;}
+			.portfolio h3:hover									{cursor:pointer;}
+		.portfolio ul											{margin:12px 0 0;}
+		.portfolio ul li										{list-style:none;}
+		.portfolio .extra										{position:absolute; left:-9999px;}
+		.portfolio ul li a										{width:140px; height:140px; display:block; margin-left:5px;}
+			.portfolio ul li a:hover							{border:none !important; -moz-box-shadow:0 0 10px #999; -webkit-box-shadow:0 0 10px #999; box-shadow:0 0 10px #999;}
+	.thumbs														{clear:both;}
+		.thumbs ul li											{float:left; margin:0 5px 12px 0;}					
+		.web h3													{background-color:rgb(162,197,43); color:#FFF; padding:5px 40px;}
+			.web h3:hover										{background-color:rgba(162,197,43,0.8);}
+		.web ul li a											{width:220px; height:136px;}
+		.edm h3													{background-color:rgb(108,172,216); color:#FFF; padding:5px 40px;}
+			.edm h3:hover										{background-color:rgba(108,172,216,0.8);}
+		.brochure h3											{background-color:rgb(116,93,61); color:#FFF; padding:5px 40px;}
+			.brochure h3:hover									{background-color:rgba(116,93,61,0.8);}
+		.poster h3												{background-color:rgb(185,161,193); color:#FFF; padding:5px 40px;}
+			.poster h3:hover									{background-color:rgba(185,161,193,0.8);}
+		.illus h3												{background-color:rgb(232,92,103); color:#FFF; padding:5px 40px;}
+			.illus h3:hover										{background-color:rgba(232,92,103,0.8);}
+		.logo h3												{background-color:rgb(235,196,14); color:#FFF; padding:5px 40px;}
+			.logo h3:hover										{background-color:rgba(235,196,14,0.8);}
+		.logo ul li												{border-bottom:1px solid #EEECEC; margin-bottom:10px; width:100%;}
+		.logo ul li:last-child									{border:none;}
+		.logo img												{padding:20px 0 28px 0;}
+		.stationary												{margin-bottom:48px;}
+		.stationary h3											{background-color:rgb(235,108,14); color:#FFF; padding:5px 40px;}
+			.stationary h3:hover								{background-color:rgba(235,108,14,0.8);}
+
+/*----------------------
+  -CONTACT-
+---------------------*/
+section.contact													{height:600px;}
+	img.contactImg												{position:absolute; top:48px; left:-25px;}
+	.feature a													{font-size:13px; color:#666;}
+	.feature a:hover											{border-bottom:1px dashed #666;}
+address															{color:#666; font-style:normal; margin-top:20px;}
+	address b													{color:#690;}
+	                                                             
+/*----------------------
+  -FOOTER-
+---------------------*/
+footer															{float:left; margin-right:20px;}
+#siteInfo														{position:absolute; bottom:0; left:2px;}
+	#siteInfo p													{font-size:11px; color:#666;}
+	
+/*----------------------
+  -Google +1-
+---------------------*/
+#___plusone_0													{float:left !important;}
